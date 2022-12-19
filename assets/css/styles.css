@@ -5,11 +5,14 @@
 :root {
     --bg-color: #202020;
     --sencond-bg-color: #2a2a2a;
+    --third-bg-color: #3a3a3a;
     --text-color: white;
     --second-color: #ccc;
     --main-color: #c40000;
     --big-font: 6rem;
-    --h2-font: 3.5rem;
+    --h2-font: 4rem;
+    --h3-font: 2rem;
+    --hl-p-font: 2rem;
     --p-font: 1.6rem;
 }
 
@@ -114,36 +117,6 @@ nav.sticky {
 }
 
 
-/* @media (max-width: 1060px) {
-    .navbar .menu-icon {
-        display: block;
-    }
-    .navbar .menu {
-        position: fixed;
-        background: #262626;
-        flex-direction: column;
-        min-width: 300px;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        padding: 50px;
-    }
-    .navbar .menu.active {
-        right: 0;
-    }
-    .navbar .menu .close-btn {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 25px;
-    }
-    .navbar .menu a {
-        display: block;
-        margin: 20px;
-    }
-} */
-
-
 /* hero */
 
 .home {
@@ -174,7 +147,7 @@ nav.sticky {
 
 .hero .desc {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: var(--hl-p-font);
     line-height: 1.4;
     color: var(--text-color);
     margin-bottom: 35px;
@@ -226,6 +199,7 @@ nav.sticky {
 }
 
 .about .qty {
+    text-align: center;
     font-weight: 600;
     font-size: var(--big-font);
     color: var(--text-color);
@@ -279,7 +253,7 @@ nav.sticky {
     padding: 25px;
     border-radius: 12px;
     cursor: pointer;
-    background-color: var(--sencond-bg-color);
+    background-color: var(--third-bg-color);
 }
 
 .services .item:hover {
@@ -298,7 +272,7 @@ nav.sticky {
 
 .services .title {
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: var(--h3-font);
     line-height: 1.5;
     color: var(--text-color);
     margin-bottom: 10px;
@@ -368,11 +342,6 @@ nav.sticky {
 
 /* FAQ  */
 
-.accordion {
-    /* background-color: var(--bg-color);
-    border-bottom: 1px solid var(--sencond-bg-color); */
-}
-
 .accordion .col {
     /* margin-left: auto;
     margin-right: auto; */
@@ -397,11 +366,11 @@ nav.sticky {
 
 .accordion h3 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: var(--h3-font);
     line-height: 1.5;
     position: relative;
     padding: 15px 0px;
-    border-bottom: solid 2px var(--sencond-bg-color);
+    border-bottom: solid 2px var(--third-bg-color);
     color: var(--text-color);
     cursor: pointer;
 }
@@ -414,7 +383,7 @@ nav.sticky {
     transform: translateY(-50%);
     font-size: 1.5em;
     font-weight: 600;
-    color: #c40000;
+    color: var(--main-color);
 }
 
 .accordion .contentBx.active h3::before {
@@ -423,12 +392,12 @@ nav.sticky {
 
 .accordion p {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: var(--p-font);
     line-height: 1.5;
     position: relative;
-    border-left: solid 5px #c40000;
-    color: var(--second-color);
-    background-color: var(--sencond-bg-color);
+    border-left: solid 5px var(--main-color);
+    color: var(--text-color);
+    background-color: var(--third-bg-color);
     height: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -460,7 +429,7 @@ nav.sticky {
 .contact .contact-left .desc {
     margin: 20px 0;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: var(--hl-p-font);
     line-height: 1.5;
     color: var(--text-color);
 }
@@ -475,7 +444,7 @@ nav.sticky {
 
 .contact .contact-left h3 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: var(--h3-font);
     color: var(--text-color);
     margin: 20px 0px;
 }
@@ -532,7 +501,7 @@ nav.sticky {
 form textarea {
     width: 100%;
     padding: 15px;
-    background: var(--sencond-bg-color);
+    background: var(--third-bg-color);
     color: var(--text-color);
     border: none;
     outline: none;
@@ -553,6 +522,7 @@ form textarea {
     color: var(--text-color);
     width: 160px;
     transition: all 0.45s ease;
+    margin-bottom: 0px;
 }
 
 .contact-right .submit:hover {
@@ -584,4 +554,132 @@ form textarea {
     font-size: 15px;
     color: var(--text-color);
     background: var(--main-color);
+}
+
+@media (max-width: 1480px) {
+    .home .hero {
+        margin-top: 80px;
+    }
+    .navbar {
+        padding: 10px 3%;
+        transition: 0.1s;
+    }
+    .navbar.sticky {
+        padding: 10px 3%;
+        transition: 0.1s;
+    }
+    .navbar .logo {
+        height: 50px;
+    }
+    .project {
+        padding: 150px 3% 100px;
+    }
+    section {
+        padding: 150px 3% 100px;
+    }
+    .end {
+        padding: 15px 3%;
+    }
+    .about .row {
+        gap: 7.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+     :root {
+        --big-font: 4rem;
+        --h2-font: 2.6rem;
+        --h3-font: 1.6rem;
+        --hl-p-font: 1.6rem;
+        --p-font: 1.3rem;
+        transition: 0.1s;
+    }
+    section {
+        padding: 110px 3%;
+    }
+    .project {
+        padding: 110px 3%;
+    }
+    .navbar .logo {
+        height: 40px;
+    }
+    .hero .title {
+        margin-bottom: 20px;
+    }
+    .hero .desc {
+        margin-bottom: 20px;
+    }
+    .about .row {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .about .row {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .about .img-company {
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .about .row-qty {
+        margin-top: 50px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 840px) {
+    .home {
+        width: 100vw;
+        height: 100%;
+    }
+    .navbar .logo {
+        height: 30px;
+    }
+    .home .hero {
+        margin-top: 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .about .qty {
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all 0.45s ease;
+    }
+    .navlist a {
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all 0.45s ease;
+        color: var(--text-color);
+    }
+    .navlist a:hover {
+        color: var(--main-color);
+        border-bottom: none;
+    }
+    .navlist a.active {
+        color: var(--text-color);
+    }
+    .navlist.open {
+        top: 100%;
+    }
 }

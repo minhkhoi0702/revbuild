@@ -500,14 +500,14 @@ nav.sticky {
 .contact-right form input,
 form textarea {
     width: 100%;
-    padding: 15px;
+    padding: 17px;
     background: var(--third-bg-color);
     color: var(--text-color);
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .contact-right textarea {

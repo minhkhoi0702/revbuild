@@ -1,6 +1,6 @@
 const header = document.querySelector("nav");
 window.addEventListener("scroll", function() {
-    header.classList.toggle("sticky", window.scrollY > 100);
+    header.classList.toggle("sticky", window.scrollY > 50);
 });
 
 let menu = document.querySelector("#menu-icon");

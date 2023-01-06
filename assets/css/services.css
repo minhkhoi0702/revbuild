@@ -1,0 +1,51 @@
+:root {
+    --h1-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1.6rem;
+}
+
+
+/* common */
+
+section {
+    padding: 140px 15%;
+}
+
+
+/* Services */
+
+.services {
+    padding: 200px 15% 100px;
+    background-color: var(--sencond-bg-color);
+}
+
+.services .sub-title {
+    font-size: var(--h1-font);
+}
+
+.services .row {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+#drafting {
+    padding-top: 0px;
+}
+
+.services .row img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.services .row h2 {
+    font-size: var(--h2-font);
+}
+
+.services .row .desc {
+    margin-bottom: 30px;
+    text-align: justify;
+}

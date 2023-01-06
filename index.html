@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
     <!-- icon -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <!-- folder css -->
@@ -23,14 +23,14 @@
     <!-- navbar design -->
     <nav class="navbar">
         <!-- Logo -->
-        <a href="#home"><img src="./assets/img/Revbuild 4.svg" alt="Revbuild" class="logo" /></a>
+        <a href="index.html"><img src="./assets/img/Revbuild 4.svg" alt="Revbuild" class="logo" /></a>
         <!-- Menu -->
         <ul class="navlist">
-            <li><a href="#about-revuild">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
     </nav>
@@ -45,7 +45,7 @@
         </div>
     </section>
     <!-- About Us -->
-    <section class="about" id="about-revuild">
+    <!-- <section class="about">
         <div class="row">
             <div class="info">
                 <h2 class="sub-title"><span>About</span> Revbuild</h2>
@@ -73,112 +73,150 @@
                 <p class="qty-desc">Price Reduced</p>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Our Services -->
-    <section class="services" id="services">
+    <section class="services">
         <h2 class="sub-title">Our Services</h2>
 
         <div class="list">
             <!-- Service 1 -->
-            <div class="item">
+            <a href="services.html" class="item">
                 <img src="./assets/img/icons8-3d-house-60.png" alt="Drafting" class="thumb" />
                 <h3 class="title">Drafting & Dynamo</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
             <!-- Service 2 -->
-            <div class="item">
+            <a href="services.html#estimating" class="item">
                 <img src="./assets/img/icons8-budget-58.png" alt="Drafting" class="thumb" />
                 <h3 class="title">Estimating</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
             <!-- Service 3 -->
-            <div class="item">
+            <a href="services.html#land" class="item">
                 <img src="./assets/img/icons8-land-surveying-60.png" alt="Drafting" class="thumb" />
                 <h3 class="title">Land Survey</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
             <!-- Service 4 -->
-            <div class="item">
+            <a href="services.html#cabinet" class="item">
                 <img src="./assets/img/icons8-cabinet-60.png" alt="Drafting" class="thumb" />
                 <h3 class="title">Cabinet</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
             <!-- Service 5 -->
-            <div class="item">
+            <a href="services.html#render" class="item">
                 <img src="./assets/img/icons8-3ds-max-60.png" alt="3D Render" class="thumb" />
                 <h3 class="title">3D Render</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
             <!-- Service 6 -->
-            <div class="item">
+            <a href="services.html#graphic" class="item">
                 <img src="./assets/img/icons8-graphic-design-60.png" alt="Graphic Design" class="thumb" />
                 <h3 class="title">Graphic Design</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
             <!-- Service 7 -->
-            <div class="item">
+            <a href="services.html#heating" class="item">
                 <img src="./assets/img/icons8-heat-and-cool-60.png" alt="Heating & Cooling" class="thumb" />
                 <h3 class="title">Heating & Cooling</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
             <!-- Service 8 -->
-            <div class="item">
+            <a href="services.html#admin" class="item">
                 <img src="./assets/img/icons8-administration-60.png" alt="Drafting" class="thumb" />
                 <h3 class="title">Administration</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-            </div>
+            </a>
+
         </div>
     </section>
     <!-- Project -->
-    <section class="project" id="project">
-        <h2 class="sub-title"><span></span>Our Projects</h2>
-        <div class="container">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="./assets/img/aston-martin.jpg" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/audi-rs-e-tron-gt.jpg" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/maserati-mc20.jpg" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/nio-et5.jpg" alt="" />
-                    </div>
-
-                    ...
+    <section class="project">
+        <h2 class="sub-title">Our Projects</h2>
+        <div class="project-content">
+            <!-- image 1 -->
+            <div class="row">
+                <img src="/assets/img/project-1.png" alt="">
+                <div class="layer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga possimus molestiae enim illo velit aspernatur, repudiandae.</p>
+                    <a href="#!"><i class='bx bx-link-external'></i></a>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+
+            <!-- image 2 -->
+            <div class="row">
+                <img src="/assets/img/project-2.png" alt="">
+                <div class="layer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga possimus molestiae enim illo velit aspernatur, repudiandae.</p>
+                    <a href="#!"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- image 3 -->
+            <div class="row">
+                <img src="/assets/img/project-3.png" alt="">
+                <div class="layer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga possimus molestiae enim illo velit aspernatur, repudiandae.</p>
+                    <a href="#!"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- image 4 -->
+            <div class="row">
+                <img src="/assets/img/project-4.png" alt="">
+                <div class="layer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga possimus molestiae enim illo velit aspernatur, repudiandae.</p>
+                    <a href="#!"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- image 5 -->
+            <div class="row">
+                <img src="/assets/img/project-5.png" alt="">
+                <div class="layer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga possimus molestiae enim illo velit aspernatur, repudiandae.</p>
+                    <a href="#!"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- image 6 -->
+            <div class="row">
+                <img src="/assets/img/project-6.png" alt="">
+                <div class="layer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga possimus molestiae enim illo velit aspernatur, repudiandae.</p>
+                    <a href="#!"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+
+
+
         </div>
     </section>
     <!-- FAQ -->
-    <section class="accordion" id="faq">
+    <section class="accordion">
         <div class="col">
             <h2 class="sub-title">
                 Frequently Asked<span> Questions</span>
@@ -234,14 +272,14 @@
         </div>
     </section>
     <!-- Contact Us -->
-    <section class="contact" id="contact-us">
+    <section class="contact">
         <div class="contact-left">
             <h2 class="sub-title">Contact <span>Us</span></h2>
             <p class="desc">
                 For more information on any our design or services, or if you wish to request a brochure please contact us using the form below.
             </p>
             <div class="list">
-                <li><a href="tel:+84286686232" class="contact-info"><span><i class="bx bx-phone"></i></span> Phone: (+84)28 6686 232</a></li>
+                <li><a href="tel:+842866862324" class="contact-info"><span><i class="bx bx-phone"></i></span> Phone: (+84)28 6686 2324</a></li>
                 <li><a href="mailto:rvbd@revbuild.com.au" class="contact-info"><span><i class="bx bx-envelope"></i></span> Email: rvbd@revbuild.com.au</a></li>
                 <li>
                     <a href="https://www.google.com/maps/place/C%C3%B4ng+ty+c%C4%83n+h%E1%BB%99+Tresor/@10.7667039,106.7009802,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f205ac9b6d5:0x2d6300e145f1a39b!8m2!3d10.7666892!4d106.7031828" class="contact-info"><span><i class="bx bx-home-alt"></i></span> Address: Distric 1, Ho Chi Minh</a>
@@ -266,6 +304,8 @@
             </form>
         </div>
     </section>
+
+
 
     <!----end section design--->
     <section class="end">
@@ -308,7 +348,7 @@
         }
     </script>
     <!-- Slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper(".swiper", {
             autoplay: {
@@ -329,7 +369,7 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
+    </script> -->
     <!-- stmp send email -->
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script>

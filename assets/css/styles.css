@@ -314,32 +314,6 @@ nav.sticky {
     border-radius: 12px;
 }
 
-
-/* .project .container {
-    width: 100%;
-}
-
-.project .swiper {
-    width: 100%;
-    height: fit-content;
-}
-
-.swiper-slide img {
-    width: 100%;
-}
-
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-    color: var(--text-color);
-}
-
-.swiper .swiper-pagination-bullet-active {
-    background-color: var(--text-color);
-} */
-
-
-/* Project 2*/
-
 .project-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

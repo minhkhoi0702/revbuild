@@ -45,7 +45,7 @@ body {
     background: #c40000;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: var(--p-font);
     text-align: center;
     color: var(--text-color);
 }
@@ -557,7 +557,7 @@ form textarea {
 
 .contact-right .submit {
     display: inline-block;
-    font-size: 16px;
+    font-size: var(--p-font);
     background: var(--main-color);
     color: var(--text-color);
     width: 160px;
@@ -611,17 +611,11 @@ form textarea {
     .navbar .logo {
         height: 50px;
     }
-    .project {
-        padding: 150px 3% 100px;
-    }
     section {
         padding: 150px 3% 100px;
     }
     .end {
         padding: 15px 3%;
-    }
-    .about .row {
-        gap: 7.5rem;
     }
 }
 
@@ -629,15 +623,12 @@ form textarea {
      :root {
         --big-font: 4rem;
         --h2-font: 2.6rem;
-        --h3-font: 1.6rem;
+        --h3-font: 1.8rem;
         --hl-p-font: 1.6rem;
         --p-font: 1.3rem;
         transition: 0.1s;
     }
     section {
-        padding: 110px 3%;
-    }
-    .project {
         padding: 110px 3%;
     }
     .navbar .logo {
@@ -649,24 +640,9 @@ form textarea {
     .hero .desc {
         margin-bottom: 20px;
     }
-    .about .row {
-        gap: 5rem;
-    }
 }
 
 @media (max-width: 920px) {
-    .about .row {
-        grid-template-columns: 1fr;
-        gap: 5rem;
-    }
-    .about .img-company {
-        max-width: 500px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .about .row-qty {
-        margin-top: 50px;
-    }
     .contact {
         grid-template-columns: 1fr;
     }
@@ -687,10 +663,6 @@ form textarea {
 }
 
 @media (max-width: 700px) {
-    .about .qty {
-        font-size: 2.6rem;
-        margin-bottom: 15px;
-    }
     #menu-icon {
         display: block;
     }

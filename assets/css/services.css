@@ -7,10 +7,6 @@
 
 /* common */
 
-section {
-    padding: 140px 15%;
-}
-
 
 /* Services */
 
@@ -48,4 +44,34 @@ section {
 .services .row .desc {
     margin-bottom: 30px;
     text-align: justify;
+}
+
+@media (max-width: 1480px) {
+    .services {
+        padding: 150px 3% 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+     :root {
+        --h1-font: 2.6rem;
+        --h2-font: 1.8rem;
+        --p-font: 1.3rem;
+    }
+    .services {
+        padding: 110px 3%;
+    }
+    .services .row {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 920px) {
+    .services .row {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .services .row img {
+        max-height: 350px;
+    }
 }

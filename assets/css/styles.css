@@ -316,7 +316,7 @@ nav.sticky {
 
 .project-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     align-items: center;
     gap: 4rem;
 }
@@ -596,17 +596,32 @@ form textarea {
     background: var(--main-color);
 }
 
-@media (max-width: 1480px) {
+
+/* Respossive */
+
+@media (max-width: 1700px) {
+    section {
+        padding: 160px 12% 120px;
+    }
+    .navbar {
+        padding: 10px 12%;
+        transition: 0.1s;
+    }
+    .navbar.sticky {
+        padding: 10px 12%;
+        transition: 0.1s;
+    }
+}
+
+@media (max-width: 1500px) {
     .home .hero {
         margin-top: 80px;
     }
     .navbar {
         padding: 10px 3%;
-        transition: 0.1s;
     }
     .navbar.sticky {
         padding: 10px 3%;
-        transition: 0.1s;
     }
     .navbar .logo {
         height: 50px;

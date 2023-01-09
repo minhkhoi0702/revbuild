@@ -16,6 +16,7 @@
 }
 
 .services .sub-title {
+    margin-bottom: 80px;
     font-size: var(--h1-font);
 }
 
@@ -73,5 +74,8 @@
     }
     .services .row img {
         max-height: 350px;
+    }
+    .services .row:nth-child(odd) img {
+        order: -1;
     }
 }
